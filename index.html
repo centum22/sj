@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PORTFOLIO Main Page</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+    <section  id="header">
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <div data-aos="fade-up" class="header-text">
+                <span class="square"></span>
+                <h1 data-aos="fade-up"><br>PARK SOJUNG's</h1>
+                <h2><span>PORTFOLIO</span></h2>                
+                <!-- <button class="common-btn"><a href="../fancbox/FANC_01/index.html">Read More</a></button> -->
+                <div class="line">
+                    <!-- <span class="line-1"></span><br> -->
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <!-- <video src="video/탄소중립운동 영상.mp4" loop muted autoplay controls class="video"></video> -->
+            </div>
+        </div>
+    </section>
+    
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">상단으로</a></li>
+            <li><a href="#about">자기소개</a></li>
+            <li><a href="#features">① 그래픽디자인</a></li>
+            <li><a href="#offer">② 영상제작</a></li>
+            <li><a href="#courses2">③ 웹디자인</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+    
+    
+        
+<!--features-->   
+    
+<section id="features">
+    <div  data-aos="fade-up" class="feature-row">
+        <div class="feature-col">
+            <img src="images/pic-1.png">
+            <h4>Graphic Design<br>그래픽 디자인</h4>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic-2.png">
+            <h4>Video Production<br>영상 제작</h4>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic-3.png">
+            <h4>Web Design<br>웹 디자인</h4>
+        </div>
+    </div>
+</section>  
+    
+<!--courses -->
+    
+<section id="courses">
+    <div class="container course-row">
+        <div data-aos="fade-up" class="course-left-col">
+            <div class="course-text">
+                <h1><span>Gallery① </span>Graphic Design</h1>
+                <h2>Photoshop / Illustrator</h2>
+                <span class="square"></span>
+                <p>배너·포스터·리플렛·패키지디자인·로고<br>상세페이지·캐릭터·달력·카드뉴스·명함</p>
+                
+                <div class="line">
+                    <!-- <span class="line-1"></span><br> -->
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                
+                <button class="common-btn"><a href="Graphics Design Gallery/index.html">Graphic Design</a></button>
+                <!-- a href="Harley/index.html" 이걸 넣을 수도 있다-->
+
+            </div>
+        </div>
+        <div data-aos="fade-right" class="course-right-col">
+            <img src="images/course.png">
+        </div>
+    </div>
+</section>  
+        
+<!--Offer  -->
+
+<section id="offer">
+    <div data-aos="fade-up" class="about-left-col">
+        <img src="images/offer.png">
+    </div>
+    <div data-aos="fade-right" class="about-right-col">
+        <div class="offer-text">
+            <h1><span>Gallery② </span>Video Production</h1>
+            <h2>Premiere Pro / After Effects</h2>
+            <span class="square"></span>
+            <p>광고·인트로·애니메이션·3D</p>
+            <div class="line">
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <a href="Video Production Gallery/index.html"><button class="common-btn">Video Production</button></a>            
+        </div>
+    </div>
+</section> 
+   
+
+<!--courses2 -->
+    
+<section id="courses2">
+    <div class="container course-row">
+        <div data-aos="fade-up" class="course-left-col">
+            <div class="course-text">
+                <h1><span>Gallery③ </span>Web Design</h1>
+                <h2>Visual Studio(HTML·CSS·Jabascript)</h2>
+                <span class="square"></span> 
+                <p>웹퍼블리싱·웹디자인</p>    
+                <div class="line">
+                    <!-- <span class="line-1"></span><br> -->
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <a href="Web Design/index.html"><button class="common-btn">Web Design</button></a>         
+                <!-- a href="Harley/index.html" 이걸 넣을 수도 있다-->
+            </div>
+        </div>
+        <div data-aos="fade-right" class="course-right-col">
+            <img src="images/course2.png">
+        </div>
+      </div>
+</section>  
+
+
+<!--Footer      -->
+       
+<section id="footer">
+    <div class="container footer-row">
+        <hr>
+        <div class="footer-col">           
+            <h4>CONTACT</h4>
+            <P>-</P>
+        </div>        
+    </div>
+</section>
+                 
+<!--social-icons        -->
+     
+<!-- <div class="social-icons">
+    <a href="https://blog.naver.com/sj3878"><img src="images/facebook.png"></a>
+</div>  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                                                                                             
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+        
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed: 1000,
+            speedAsDuration: true
+        });
+
+        AOS.init();
+        
+    </script>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
